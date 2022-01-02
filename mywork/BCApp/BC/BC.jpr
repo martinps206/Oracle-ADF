@@ -69,7 +69,9 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
    <value n="defaultPackage" v="bc"/>
+   <value n="jbo.JpxName" v="bc.BC"/>
    <value n="jbo.NoAttrEnumClasses" v="true"/>
+   <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="ADFbc"/>
@@ -77,6 +79,7 @@
          <string v="XML"/>
       </list>
    </hash>
+   <value n="oracle.jbo.SavedPreferences" v="true"/>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <list n="copyRes">
          <string v=".cpx"/>
@@ -104,8 +107,50 @@
       <value n="webIANAEncoding" v="windows-1252"/>
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
-      <hash n="profileDefinitions"/>
-      <list n="profileList"/>
+      <hash n="profileDefinitions">
+         <hash n="BCApp_BC">
+            <value n="adflib-connectionDetails" v="true"/>
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="5"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="WEB-INF/classes/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**"/>
+                              <value n="type" v="0"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="deploy/BCApp_BC.jar"/>
+            <hash n="LibraryDependencies"/>
+            <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
+            <value n="profileName" v="BCApp_BC"/>
+         </hash>
+      </hash>
+      <list n="profileList">
+         <string v="BCApp_BC"/>
+      </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="BCApp-BC-webapp"/>
@@ -151,6 +196,14 @@
             <value n="id" v="BC4J Oracle Domains"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -179,6 +232,14 @@
          </hash>
          <hash>
             <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

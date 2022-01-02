@@ -1,0 +1,20 @@
+//Groovy Scripts for demo.model.EmpDetails
+
+package demo.model
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+import oracle.jbo.script.annotation.RefreshExpression;
+
+@TransientValueExpression(attributeName="AnnualSalary")
+def AnnualSalary_ExpressionScript_Expression()
+{
+(Salary == null ? 0 : Salary) * 12
+}
+
+
+@RefreshExpression(attributeName="AnnualSalary")
+def AnnualSalary_RecalcExpressionScript_RecalcExpression()
+{
+true
+}
+

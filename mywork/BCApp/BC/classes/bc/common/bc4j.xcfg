@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="bc.AppModule" default="AppModuleLocal">
+    <AppModuleConfig name="AppModuleLocal" jbo.project="bc.BC" ApplicationName="bc.AppModule" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ConnectionHRDS"/>
+      <Security AppModuleJndiName="bc.AppModule"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="AppModuleShared" jbo.project="bc.BC" ApplicationName="bc.AppModule" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ConnectionHRDS"/>
+      <Security AppModuleJndiName="bc.AppModule"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

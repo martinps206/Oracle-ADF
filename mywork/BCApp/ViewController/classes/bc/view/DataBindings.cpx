@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.12.24" id="DataBindings"
+             SeparateXMLFiles="false" Package="bc.view" ClientType="Generic">
+  <pageMap>
+    <page path="/Editar.jsf" usageId="bc_view_EditarPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="bc_view_EditarPageDef" path="bc.view.pageDefs.EditarPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="bc" FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true" SupportsRangesize="true"
+                     SupportsResetState="true" SupportsSortCollection="true" Configuration="AppModuleShared"
+                     syncMode="Immediate" xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
